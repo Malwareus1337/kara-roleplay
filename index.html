@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kara Roleplay | Ana Sayfa</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <span class="logo-text">KARA</span>
+                <span class="logo-sub">ROLEPLAY</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#hero">Ana Sayfa</a></li>
+                <li><a href="#features">Özellikler</a></li>
+                <li><a href="#server-info">Sunucu Bilgisi</a></li>
+                <li><a href="#rules">Kurallar</a></li>
+                <li><a href="#discord">Discord</a></li>
+            </ul>
+            <button class="join-btn">KAYIT OL</button>
+            <button class="mobile-toggle">☰</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="hero">
+            <div class="hero-background"></div>
+            
+            <div class="hero-content">
+                <h1>KARA ROLEPLAY</h1>
+                <p>Los Santos'ta gerçek roleplay deneyimini yaşa. Profesyonel ekibimiz ve kaliteli oyuncularımızla unutulmaz anlar.</p>
+                <button class="start-playing-btn">OYNAMAYA BAŞLA</button>
+                
+                <div class="player-count">
+                    <span class="count-number" id="total-players">245</span>
+                    <span class="count-label">ÇEVRİMİÇİ OYUNCU</span>
+                </div>
+            </div>
+
+            <div class="gta-features">
+                <div class="feature-card">
+                    <div class="feature-icon">🏎️</div>
+                    <h3>ARAÇ SİSTEMİ</h3>
+                    <p>500+ farklı araç modeli</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏠</div>
+                    <h3>EV SİSTEMİ</h3>
+                    <p>Satın alınabilir evler</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💼</div>
+                    <h3>İŞ SİSTEMİ</h3>
+                    <p>20+ farklı meslek</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🚔</div>
+                    <h3>POLİS SİSTEMİ</h3>
+                    <p>Gerçekçi polis roleplay</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="features-section" id="features">
+            <div class="container">
+                <h2>GTA 5 Roleplay Özellikleri</h2>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <div class="feature-image">🏪</div>
+                        <h3>İŞLETMELER</h3>
+                        <p>Kendi işletmenizi kurun ve yönetin. Market, restoran, benzinlik ve daha fazlası.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-image">🚗</div>
+                        <h3>ARAÇ GALERİSİ</h3>
+                        <p>Lüks arabalardan motosikletlere kadar geniş araç yelpazesi. Kendi aracınızı özelleştirin.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-image">🏥</div>
+                        <h3>HASTANE SİSTEMİ</h3>
+                        <p>Gerçekçi sağlık sistemi. Doktor olun veya tedavi alın.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-image">🎭</div>
+                        <h3>KARAKTER SİSTEMİ</h3>
+                        <p>Detaylı karakter oluşturma ve geliştirme sistemi.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-image">💰</div>
+                        <h3>EKONOMİ SİSTEMİ</h3>
+                        <p>Gerçekçi ekonomi sistemi. Para kazanın, harcayın ve yatırım yapın.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-image">🎪</div>
+                        <h3>ETKİNLİKLER</h3>
+                        <p>Düzenli etkinlikler ve yarışmalar. Ödüller kazanın.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section">
+            <div class="video-container">
+                <div class="video-placeholder">
+                    <div class="play-button">▶</div>
+                    <span class="video-title">HAKKIMIZDA<br>2 DAKİKADA</span>
+                </div>
+            </div>
+            
+            <div class="how-to-start">
+                <h2>BİLMİYOR MUSUN?</h2>
+                <h3>NASIL OYNAMAYA BAŞLANIR</h3>
+                <button class="guide-btn">1 DAKİKADA NASIL BAŞLANIR?</button>
+            </div>
+        </section>
+
+        <section class="server-info" id="server-info">
+            <div class="container">
+                <h2>Sunucu Bilgileri</h2>
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h3>Sunucu IP</h3>
+                        <p class="server-ip">connect 185.234.72.45</p>
+                        <button class="copy-btn" onclick="copyToClipboard('185.234.72.45')">Kopyala</button>
+                    </div>
+                    <div class="info-card">
+                        <h3>Çevrimiçi Oyuncular</h3>
+                        <p class="player-number" id="current-players">245</p>
+                        <span class="max-players">/ 500</span>
+                    </div>
+                    <div class="info-card">
+                        <h3>Sunucu Durumu</h3>
+                        <p class="status online">Çevrimiçi</p>
+                        <span class="uptime">Çalışma süresi: 99.9%</span>
+                    </div>
+                    <div class="info-card">
+                        <h3>Sunucu Versiyonu</h3>
+                        <p class="version">GTA V 1.0.2699</p>
+                        <span class="platform">FiveM Platform</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="jobs-section">
+            <div class="container">
+                <h2>Meslekler</h2>
+                <div class="jobs-grid">
+                    <div class="job-card">
+                        <div class="job-icon">👮</div>
+                        <h3>POLİS</h3>
+                        <p>Los Santos Polis Departmanı'nda görev yapın</p>
+                    </div>
+                    <div class="job-card">
+                        <div class="job-icon">🚑</div>
+                        <h3>PARAMEDIK</h3>
+                        <p>Hayat kurtarın ve sağlık hizmeti verin</p>
+                    </div>
+                    <div class="job-card">
+                        <div class="job-icon">🚚</div>
+                        <h3>KAMYONCU</h3>
+                        <p>Şehir içi ve şehirler arası nakliye yapın</p>
+                    </div>
+                    <div class="job-card">
+                        <div class="job-icon">🔧</div>
+                        <h3>MEKANİKER</h3>
+                        <p>Araçları tamir edin ve modifiye edin</p>
+                    </div>
+                    <div class="job-card">
+                        <div class="job-icon">🏪</div>
+                        <h3>İŞLETMECİ</h3>
+                        <p>Kendi işinizi kurun ve büyütün</p>
+                    </div>
+                    <div class="job-card">
+                        <div class="job-icon">🎭</div>
+                        <h3>SANATÇI</h3>
+                        <p>Müzik yapın ve eğlence sektöründe çalışın</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="rules" id="rules">
+            <div class="container">
+                <h2>Sunucu Kuralları</h2>
+                <div class="rules-grid">
+                    <div class="rule-category">
+                        <h3>Genel Kurallar</h3>
+                        <ul>
+                            <li>Herkese saygılı olun</li>
+                            <li>Küfür ve hakaret yasaktır</li>
+                            <li>Roleplay dışına çıkmayın</li>
+                            <li>Meta gaming yasaktır</li>
+                            <li>Power gaming yasaktır</li>
+                        </ul>
+                    </div>
+                    <div class="rule-category">
+                        <h3>Roleplay Kuralları</h3>
+                        <ul>
+                            <li>Karakterinizi gerçekçi oynayın</li>
+                            <li>Ölüm sonrası hafıza kaybı</li>
+                            <li>Gerçek hayat bilgilerini kullanmayın</li>
+                            <li>Ses programları yasaktır</li>
+                            <li>Karakter geçmişinize uygun davranın</li>
+                        </ul>
+                    </div>
+                    <div class="rule-category">
+                        <h3>Teknik Kurallar</h3>
+                        <ul>
+                            <li>Hile ve exploit yasaktır</li>
+                            <li>Bug abuse yasaktır</li>
+                            <li>Modifikasyon yasaktır</li>
+                            <li>Makro kullanımı yasaktır</li>
+                            <li>Çoklu hesap yasaktır</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="discord" id="discord">
+            <div class="container">
+                <div class="discord-content">
+                    <h2>Discord Topluluğumuza Katıl</h2>
+                    <p>Güncel haberler, etkinlikler ve toplulukla iletişim için Discord sunucumuza katılın.</p>
+                    <div class="discord-stats">
+                        <div class="stat">
+                            <span class="stat-number">1,250</span>
+                            <span class="stat-label">Üye</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">89</span>
+                            <span class="stat-label">Çevrimiçi</span>
+                        </div>
+                    </div>
+                    <button class="discord-btn" onclick="window.open('https://discord.gg/kararoleplay', '_blank')">
+                        Discord'a Katıl
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Kara Roleplay. Tüm hakları saklıdır.</p>
+            <p>Bu sunucu Rockstar Games ile bağlantılı değildir.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
